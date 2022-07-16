@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paginaInicial.css">
+    <title>React para Leigos</title>
+</head>
+
+<body>
+    <header id="capa">
+        <img src="img/capa.png" alt="Imagem">
+        <p id="capa-ano">2022</p>
+        <div id="capa-info">
+            <p id="capa-descricao">Essa documentação foi criada com o intuito de explicar a biblioteca React da maneira mais simples possível e sem termos técnicos.</p>
+            <div id="capa-contatos">
+                <p>Autor: <b>Rosivaldo Campos</b></p>
+                <p>Github: <a href="https://github.com/rosivaldocamjr" target="_blank">https://github.com/rosivaldocamjr</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/rosivaldocamposjr/" target="_blank">https://www.linkedin.com/in/rosivaldocamposjr/</a></p>
+            </div>
+        </div>
+    </header>
+    <section id="sumario">
+        <h2>Sumário</h2>
+        <ul>
+            <li><a href="#introducao">1 - Introdução</a></li>
+            <li><a href="cap2.html" target="_blank">2 - Componentes</a></li>
+            <li><a href="cap3.html" target="_blank">3 - JSX</a></li>
+            <li><a href="cap4.html" target="_blank">4 - Eventos de Click</a></li>
+            <li><a href="cap5.html" target="_blank">5 - Trabalhando com Imagens</a></li>
+            <li><a href="cap6.html" target="_blank">6 - CSS nos Componentes</a></li>
+            <li><a href="cap7.html" target="_blank">7 - Fragments</a></li>
+            <li><a href="cap8.html" target="_blank">8 - Renderização Condicional</a></li>
+            <li><a href="cap9.html" target="_blank">9 - Renderização de Listas</a></li>
+            <li><a href="cap10.html" target="_blank">10 - Trabalhando com Props</a></li>
+            <li><a href="cap11.html" target="_blank">11 - Trabalhando com useState</a></li>
+            <li><a href="cap12.html" target="_blank">12 - Passando Métodos por Props</a></li>
+        </ul>
+    </section>
+    <main id="introducao">
+        <h2>Introdução</h2>
+        <p>O React é uma biblioteca (alguns chamam de Framework) JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.</p><br>
+        <p>O React é uma biblioteca front-end e tem como um de seus objetivos facilitar a conexão entre diferentes partes de uma página, portanto seu funcionamento acontece através do que chamamos de componentes.</p><br>
+        <p>Em outras palavras, podemos imaginar que o React divide uma tela em diversos componentes para, então, trabalhar sobre eles de maneira individual.</p><br>
+        <p>Os componentes são utilizados para reaproveitamento de código e padronização de interface.</p><br>
+        <p><strong>Programas que devemos instalar para começar a usar o React</strong></p><br>
+        <p><strong>VSCode</strong> - O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.</p><br>
+        <p>Site do download: <a href="https://code.visualstudio.com/Download" target="_blank">https://code.visualstudio.com/Download</a></p><br>
+        <p>Tutorial de como baixar: <a href="https://www.youtube.com/watch?v=oQiytM6UJrI&ab_channel=CanaldoBog%C3%A9a" target="_blank">https://www.youtube.com/watch?v=oQiytM6UJrI&ab_channel=CanaldoBog%C3%A9a</a></p><br>
+        <p><strong>Node.js</strong> - Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.</p><br>
+        <p>Site do download: <a href="https://nodejs.org/en/download/" target="_blank">https://nodejs.org/en/download/</a></p><br>
+        <p>Tutorial de como baixar: <a href="https://www.youtube.com/watch?v=65gksI59EIY&t=181s&ab_channel=ProgramadorViking" target="_blank">https://www.youtube.com/watch?v=65gksI59EIY&t=181s&ab_channel=ProgramadorViking</a></p><br>
+        <p><span>IMPORTANTE</span>: Para verificarmos se o node foi instalado corretamente, devemos abrir o CMD (Prompt de Comando, caso você esteja usando Windows) e digitar o comando node -v e teclar Enter. Caso apareça a versão, é sinal que deu tudo certo.</p><br>
+        <p><img src="img/cap01/img_1.png" alt="Imagem"></p><br>
+        <p><strong>O que devo saber para usar o React ?</strong></p><br>
+        <p>É recomendável ter uma noção básica de Html, Css e JavaScript. Caso não possua tais conhecimentos, deixaremos links de textos e vídeos a respeito dos assuntos de Html, Css e JavaScript que serão necessários para o entendimento da biblioteca React.</p><br>
+        <p>Alguns assuntos importantes de JavaScript:</p><br>
+        <p>➜ Estrutura de condição (if else, switch case, operador ternário)</p>
+        <p>➜ Estrutura de repetição (for, while, do while)</p>
+        <p>➜ Básico de Objetos</p>
+        <p>➜ Funções</p>
+        <p>➜ Manipulação de DOM</p><br>
+        <p>Deixaremos aqui o link de um minicurso sobre esses principais assuntos em JavaScript. São apenas 16 vídeos de 5 a 10 minutos cada.</p><br>
+        <p><a href="https://www.youtube.com/watch?v=g08WcKOHeK0&list=PLm-VCNNTu3LnlPhqxx03kvjQd3qF6EBdz&index=1&ab_channel=FelipeRocha%E2%80%A2dicasparadevs" target="_blank">https://www.youtube.com/watch?v=g08WcKOHeK0&list=PLm-VCNNTu3LnlPhqxx03kvjQd3qF6EBdz&index=1&ab_channel=FelipeRocha%E2%80%A2dicasparadevs</a></p><br>
+        <p>Caso não entenda bem todos os assuntos abordados no minicurso, não se preocupe. Sabendo apenas o básico de estruturas condicionais, estruturas de repetição, o básico de objetos e funções, já é possível entender os conceitos que abordaremos sobre React.</p><br>
+        <p><strong>Criando o Primeiro App</strong></p><br>
+        <p>Primeiramente iremos criar uma pasta na área de trabalho (Desktop).</p><br>
+        <p><img src="img/cap01/img_2.png" alt="Imagem"></p><br>
+        <p>Em seguida abriremos o CMD (Prompt de Comando) e digitaremos alguns comandos.</p><br>
+        <p>O comando cd no CMD do Windows serve para entrar em pastas. Usaremos esse comando para entrar na pasta React que se encontra no Desktop.</p><br>
+        <p>Quando abrimos o CMD a pasta que inicia é a do usuário. Nesse caso a pasta rosiv.</p><br>
+        <p><img src="img/cap01/img_3.png" alt="Imagem"></p><br>
+        <p>O primeiro comando que devemos digitar é o cd Desktop, para irmos para o Desktop.</p><br>
+        <p><img src="img/cap01/img_4.png" alt="Imagem"></p><br>
+        <p>Agora dentro do Desktop temos a pasta React. Para irmos para ela digitaremos cd React.</p><br>
+        <p><img src="img/cap01/img_5.png" alt="Imagem"></p><br>
+        <p>Agora sim estamos dentro da pasta React que se encontra no Desktop do Windows.</p><br>
+        <p>Podemos criar um App React de diversas formas, todos os comandos a seguir são válidos. Vai depender do seu objetivo.</p><br>
+        <p>npx create-react-app nome-app</p>
+        <p>yarn create react-app nome-app</p>
+        <p>npm create vite@latest nome-app</p>
+        <p>yarn create vite nome-app</p><br>
+        <p>Optaremos pelo comando <span>npm create vite@latest nome-app</span>. O projeto será criado dentro da pasta React.</p><br>
+        <p><img src="img/cap01/img_6.png" alt="Imagem"></p><br>
+        <p>O comando nos pede para selecionarmos o framework que iremos usar. No nosso caso devemos selecionar o react e teclar Enter.</p><br>
+        <p><img src="img/cap01/img_7.png" alt="Imagem"></p><br>
+        <p>Em seguida aparecem duas variantes, o react puro ou com typescript. Iremos escolher o react puro.</p><br>
+        <p><img src="img/cap01/img_8.png" alt="Imagem"></p><br>
+        <p>Logo abaixo temos a instalação já pronta. O próximo passo é abrirmos a pasta react-leigos no VSCode.</p><br>
+        <p><img src="img/cap01/img_9.png" alt="Imagem"></p><br>
+        <p>Ao abrirmos o VSCode, devemos ir no menu superior em Arquivo e clicar em Abrir Pasta.</p><br>
+        <p><img src="img/cap01/img_10.png" alt="Imagem"></p><br>
+        <p>Em seguida selecionar a pasta react-leigos e clicar em Selecionar pasta.</p><br>
+        <p><img src="img/cap01/img_11.png" alt="Imagem"></p><br>
+        <p>O programa terá a seguinte aparência:</p><br>
+        <p><img src="img/cap01/img_12.png" alt="Imagem"></p><br>
+        <p>Tem outra forma de abrir a pasta react-leigos. Clicando com o botão direito do mouse na pasta react-leigos e escolhendo Abrir com Code.</p><br>
+        <p><img src="img/cap01/img_13.png" alt="Imagem"></p><br>
+        <p>Com o programa aberto devemos usar o Terminal do próprio VSCode, pois precisamos digitar o comando npm install ou npm i para carregar as dependências. As dependências são alguns arquivos de configuração, mas falaremos disso só depois para não dificultar o entendimento.</p><br>
+        <p>Para abrir o Terminal do VSCode usamos o atalho Ctrl + ' (Control mais Aspas Simples) ou no menu superior clicamos em Ver seguido de Terminal.</p><br>
+        <p><img src="img/cap01/img_14.png" alt="Imagem"></p><br>
+        <p>Com o terminal aberto digitamos o comando npm i.</p><br>
+        <p><img src="img/cap01/img_15.png" alt="Imagem"></p><br>
+        <p>Será feito o download de alguns arquivos:</p><br>
+        <p><img src="img/cap01/img_16.png" alt="Imagem"></p><br>
+        <p>No lado esquerdo do programa temos diversos arquivos e pastas, porém por enquanto iremos ver apenas os arquivos App.jsx, App.css e o index.css. Não se preocupe com os outros arquivos e pastas, mais na frente iremos ver cada um deles.</p><br>
+        <p>O App.jsx é onde fica a parte visível do App que será mostrado no navegador. O App.css é onde escrevemos o css do arquivo App.jsx. O index.css é onde escrevemos o css global do projeto.</p><br>
+        <p><img src="img/cap01/img_17.png" alt="Imagem"></p><br>
+        <p>Dentro do App.jsx iremos apagar tudo que veio escrito como padrão e escreveremos a estrutura abaixo. Os comandos abaixo são o padrão de um componente. Iremos escrever as tags dentro do return. Perceba que a estrutura abaixo é um função que pode ser exportada.</p><br>
+        <p><img src="img/cap01/img_18.png" alt="Imagem"></p><br>
+        <p>Para visualizarmos o App no navegador devemos escrever no Terminal npm run dev. Para abrir o App no navegador podemos copiar o link http://localhost:3000/ e colar no navegador ou podemos segurar a tecla Ctrl e clicar no link.</p><br>
+        <p><img src="img/cap01/img_19.png" alt="Imagem"></p><br>
+        <p>No navegador teremos a seguinte aparência:</p><br>
+        <p><img src="img/cap01/img_20.png" alt="Imagem"></p><br>
+        <p>Iremos adicionar alguns parágrafos no App.jsx e veremos como o navegador será alterado.</p><br>
+        <p><img src="img/cap01/img_21.png" alt="Imagem"></p><br>
+        <p>Foi adicionado 2 parágrafos abaixo do h1 e notamos um erro no App. Qual o motivo desse erro ?</p><br>
+        <p>Dentro do return temos que ter apenas uma tag. Nesse caso temos 3 tags, o h1 e dois parágrafos. Para resolver isso podemos colocar essas 3 tags dentro de uma div.</p><br>
+        <p><img src="img/cap01/img_22.png" alt="Imagem"></p><br>
+        <p>E o erro sumiu. Ou seja, todo o nosso App será feito dentro dessa div. No navegador teremos a seguinte tela:</p><br>
+        <p><img src="img/cap01/img_23.png" alt="Imagem"></p><br>
+        <p>Agora veremos o arquivo index.css que é responsável pelo css (design) global do App. Primeiro temos o seletor asterisco ( * ) que corresponde a todos os elementos do documento. Temos também o seletor body que corresponde ao elemento body no Html.</p><br>
+        <p><img src="img/cap01/img_24.png" alt="Imagem"></p><br>
+        <p>Ao abrirmos no App no navegador através do comando npm run dev, teremos a seguinte tela:</p><br>
+        <p><img src="img/cap01/img_25.png" alt="Imagem"></p><br>
+        <p>Note as mudanças de background, margin, padding e fonte-family.</p><br>
+        <p>Agora veremos o arquivo App.css que é responsável pelo css do App. Para usarmos o css apenas no App, devemos importar o arquivo da seguinte forma:</p><br>
+        <p><img src="img/cap01/img_26.png" alt="Imagem"></p><br>
+        <p>Dentro da tag div iremos colocar uma classe para referenciarmos a div no App.css. Em React usamos o className para fazermos uma referência a tag, já em JavaScript usamos apenas o class.</p><br>
+        <p><img src="img/cap01/img_27.png" alt="Imagem"></p><br>
+        <p>Agora sim podemos trabalhar os estilos dentro do App.css.</p><br>
+        <p><img src="img/cap01/img_28.png" alt="Imagem"></p><br>
+        <p>E o resultado no navegador ficou da seguinte forma:</p><br>
+        <p><img src="img/cap01/img_29.png" alt="Imagem"></p><br>
+        <p>Perceba a diferença entre trabalhar os estilos globais no index.css e os estilos do App no App.css.</p><br><br>
+        <div id="voltar-topo">
+            <a href="#sumario">Voltar p/ o Topo</a>
+        </div><br><br>
+    </main>
+</body>
+
+</html>

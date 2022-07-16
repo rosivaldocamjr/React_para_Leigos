@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 10 - Trabalhando com Props</title>
+    <link rel="stylesheet" href="css/paginaInicial.css">
+</head>
+
+<body>
+    <div id="div">
+        <div id="voltar-pag-inicial">
+            <a href="index.html">Voltar p/ Página Inicial</a>
+        </div>
+        <h2>Trabalhando com Props</h2>
+        <p>Props é um recurso que utilizamos quando queremos passar valores de um componente para outro.</p><br>
+        <p>Nesse primeiro exemplo queremos passar o valor string Joca para dentro do componente PrimeiroComponente.jsx</p><br>
+        <p><img src="img/cap10/img_1.png" alt="Imagem"></p><br>
+        <p>Dentro do componente filho devemos escrever props para informar que iremos usá-las. No return a usaremos entre as chaves e com o nome que declaramos no componente pai.</p><br>
+        <p><img src="img/cap10/img_2.png" alt="Imagem"></p><br>
+        <p>No navegador teremos:</p><br>
+        <p><img src="img/cap10/img_3.png" alt="Imagem"></p><br>
+        <p>Também podemos passar uma variável como valor. Note que a variável ficará dentro de chaves:</p><br>
+        <p><img src="img/cap10/img_4.png" alt="Imagem"></p><br>
+        <p>O componente filho não é alterado:</p><br>
+        <p><img src="img/cap10/img_5.png" alt="Imagem"></p><br>
+        <p>No navegador teremos:</p><br>
+        <p><img src="img/cap10/img_6.png" alt="Imagem"></p><br>
+        <p>Agora iremos passar diversos valores do componente pai para o componente filho.</p><br>
+        <p><img src="img/cap10/img_7.png" alt="Imagem"></p><br>
+        <p>Veja que não mudou muita coisa.</p><br>
+        <p><img src="img/cap10/img_8.png" alt="Imagem"></p><br>
+        <p>No navegador teremos:</p><br>
+        <p><img src="img/cap10/img_9.png" alt="Imagem"></p><br>
+        <p>Perceba que temos o comando props escrito diversas vezes. Temos uma forma de "enxugar" essa repetição. Utilizaremos um recursos chamado Destructuring.</p><br>
+        <p>Faremos poucas mudança. Apagaremos a palavra props de todos os lugares. Dentro dos parênteses, após PrimeiroComponente, o nome dos valores fica entre chaves.</p><br>
+        <p><img src="img/cap10/img_10.png" alt="Imagem"></p><br>
+        <p>E teremos a mesma saída no navegador:</p><br>
+        <p><img src="img/cap10/img_11.png" alt="Imagem"></p><br><br>
+        <div id="voltar-topo">
+            <a href="#div">Voltar p/ o Topo</a>
+        </div><br><br>
+    </div>
+</body>
+
+</html>

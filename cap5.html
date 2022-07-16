@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 5 - Trabalhando com Imagens</title>
+    <link rel="stylesheet" href="css/paginaInicial.css">
+</head>
+
+<body>
+    <div id="div">
+        <div id="voltar-pag-inicial">
+            <a href="index.html">Voltar p/ Página Inicial</a>
+        </div>
+        <h2>Trabalhando com Imagens</h2>
+        <p><img src="img/cap05/img_1.png" alt="Imagem"></p><br>
+        <p>Como colocar uma imagem no arquivo App.jsx ?</p><br>
+        <p>Geralmente as imagens são organizadas dentro de uma pasta chamada assets. Essa pasta é criada dentro do src.</p><br>
+        <p><img src="img/cap05/img_2.png" alt="Imagem"></p><br>
+        <p>Criaremos um componente chamado Images.jsx para trabalharmos no nosso exemplo. Primeiramente dentro do nosso componente, devemos importar o arquivo. No nosso import damos um "apelido" de Imagem. Dentro das aspas fica o caminho até a imagem.</p><br>
+        <p>Como estamos dentro do arquivo Images.jsx, temos que fazer o caminho até a imagem que iremos usar. Os dois pontos ( .. ) significa voltar a pasta anterior, ou seja, saimos da pasta components e fomos para a pasta src. Em seguida entramos na pasta assets e por fim acessamos a imagem.</p><br>
+        <p><img src="img/cap05/img_3.png" alt="Imagem"></p><br>
+        <p><img src="img/cap05/img_4.png" alt="Imagem"></p><br>
+        <p>Note que na tag img o src recebe as chaves com o apelido Imagem que demos no import acima.</p><br>
+        <p>O arquivo Images.jsx foi importado no arquivo App.jsx e usado como uma tag html dentro do <span>return</span>.</p><br>
+        <p><img src="img/cap05/img_6.png" alt="Imagem"></p><br>
+        <p>E no navegador temos a seguinte aparência:</p><br>
+        <p><img src="img/cap05/img_5.png" alt="Imagem"></p><br><br>
+        <div id="voltar-topo">
+            <a href="#div">Voltar p/ o Topo</a>
+        </div><br><br>
+    </div>
+</body>
+
+</html>

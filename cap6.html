@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 6 - CSS nos Componentes</title>
+    <link rel="stylesheet" href="css/paginaInicial.css">
+</head>
+
+<body>
+    <div id="div">
+        <div id="voltar-pag-inicial">
+            <a href="index.html">Voltar p/ Página Inicial</a>
+        </div>
+        <h2>CSS nos Componentes</h2>
+        <p>Na introdução vimos como aplicar o css no index.css para estilizar de forma global. Também aplicamos o css no arquivo App.css para configurar os estilos do App.jsx.</p><br>
+        <p>É necessário estilizar cada componente para mantermos a organização do projeto e facilitar a compreensão do mesmo.</p><br>
+        <p>Então criaremos o arquivo NomeComponente.module.css e o chamaremos dentro do componente.</p><br>
+        <p><img src="img/cap06/img_1.png" alt="Imagem"></p><br>
+        <p><img src="img/cap06/img_2.png" alt="Imagem"></p><br>
+        <p>Dentro do arquivo PrimeiroComponente.module.css é onde teremos o css das classes. Para aplicarmos o css criado devemos importar o PrimeiroComponente.module.css dentro do componente PrimeiroComponente.jsx. E para usarmos de fato, devemos referenciar os estilos criados através do className.</p><br>
+        <p><img src="img/cap06/img_3.png" alt="Imagem"></p><br>
+        <p>Ao executarmos o projeto no navegador através do comando no Terminal npm run dev, teremos a seguinte aparência:</p><br>
+        <p><img src="img/cap06/img_4.png" alt="Imagem"></p><br>
+        <p>Perceba que somente foram estilizados a div e o h1 que estão inseridos no PrimeiroComponente.jsx.</p><br>
+        <p>O arquivo App.jsx se encontra da seguinte forma:</p><br>
+        <p><img src="img/cap06/img_5.png" alt="Imagem"></p><br><br>
+        <div id="voltar-topo">
+            <a href="#div">Voltar p/ o Topo</a>
+        </div><br><br>
+    </div>
+</body>
+
+</html>

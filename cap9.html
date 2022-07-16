@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 9 - Renderização de Listas</title>
+    <link rel="stylesheet" href="css/paginaInicial.css">
+</head>
+
+<body>
+    <div id="div">
+        <div id="voltar-pag-inicial">
+            <a href="index.html">Voltar p/ Página Inicial</a>
+        </div>
+        <h2>Renderização de Listas</h2>
+        <p>Para renderizar uma lista vamos precisar de um array e do método map( ) para percorrer cada elemento da lista. Pode ser um array de número, de strings ou de objetos.</p><br>
+        <p>Primeiramente iremos revisar o método map( ). Podemos percorrer um array com valores numéricos e obter um novo array contendo o quadrado de cada item original. O método map() é invocado a partir de um array e recebe como parâmetro uma função de callback, que é invocada para cada item e retorna o valor do item equivalente no array resultante.</p><br>
+        <p><img src="img/cap09/img_1.png" alt="Imagem"></p><br>
+        <p>Para compreender melhor o método map( ), deixaremos aqui um vídeo explicativo:</p><br>
+        <p><a href="https://www.youtube.com/watch?v=mgnSSwgTiFU&list=PLm-VCNNTu3LnlPhqxx03kvjQd3qF6EBdz&index=4&ab_channel=FelipeRocha%E2%80%A2dicasparadevs" target="_blank">https://www.youtube.com/watch?v=mgnSSwgTiFU&list=PLm-VCNNTu3LnlPhqxx03kvjQd3qF6EBdz&index=4&ab_channel=FelipeRocha%E2%80%A2dicasparadevs</a></p><br>
+        <p>Vamos lá !</p><br>
+        <p>O nosso projeto está com apenas um componente. O arquivo App.jsx está da seguinte forma:</p><br>
+        <p><img src="img/cap09/img_2.png" alt="Imagem"></p><br>
+        <p>Dentro do componente PrimeiroComponente.jsx iremos criar uma lista antes do return.</p><br>
+        <p><img src="img/cap09/img_3.png" alt="Imagem"></p><br>
+        <p>Lembre-se que a linguagem JavaScript é executada apenas dentro das chaves. No método map( ), para cada elemento do vetor esse mesmo elemento será impresso dentro de um parágrafo.</p><br>
+        <p><img src="img/cap09/img_4.png" alt="Imagem"></p><br>
+        <p>No navegador teremos:</p><br>
+        <p><img src="img/cap09/img_5.png" alt="Imagem"></p><br>
+        <p>Por padrão esse método no React pede a inclusão de uma propriedade. Podemos ver o aviso através do console clicando com o botão direito do mouse e selecionando Inspecionar.</p><br>
+        <p><img src="img/cap09/img_6.png" alt="Imagem"></p><br>
+        <p><img src="img/cap09/img_7.png" alt="Imagem"></p><br>
+        <p>Devemos incluir a propriedade key.</p><br>
+        <p><img src="img/cap09/img_8.png" alt="Imagem"></p><br><br>
+        <div id="voltar-topo">
+            <a href="#div">Voltar p/ o Topo</a>
+        </div><br><br>
+    </div>
+</body>
+
+</html>

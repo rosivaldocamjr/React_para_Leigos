@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 11 - Trabalhando com useState</title>
+    <link rel="stylesheet" href="css/paginaInicial.css">
+</head>
+
+<body>
+    <div id="div">
+        <div id="voltar-pag-inicial">
+            <a href="index.html">Voltar p/ Página Inicial</a>
+        </div>
+        <h2>Trabalhando com useState</h2>
+        <p>O useState é um Hook do React.</p><br>
+        <p>Mas o que são Hooks ?</p><br>
+        <p>Hooks são funções que permitem a você “ligar-se” a outros recursos a partir de componentes funcionais. O React fornece alguns Hooks internos como useState. Você também pode criar os seus próprios Hooks.</p><br>
+        <p>E o que o useState faz ?</p><br>
+        <p>Ele gera uma variável que pode sofrer alteração, simples assim.</p><br>
+        <p>Exemplo da sua sintaxe:</p><br>
+        <p>const [nome, setNome] = useState(estadoinicial)</p><br>
+        <p>O estadoinicial é o valor que a variável nome inicia. O setNome é a função que altera o valor da variável nome.</p><br>
+        <p>Outros exemplos:</p><br>
+        <p>const [idade, setIdade] = useState(18)</p><br>
+        <p>const [nome, setNome] = useState("Joca")</p><br>
+        <p><span>IMPORTANTE</span>: Para usarmos o useState devemos importá-lo no componente.</p><br>
+        <p><img src="img/cap11/img_1.png" alt="Imagem"></p><br>
+        <p>Vamos para o exemplo prático !</p><br>
+        <p>O arquivo App.jsx se encontra dessa maneira:</p><br>
+        <p><img src="img/cap11/img_2.png" alt="Imagem"></p><br>
+        <p>Primeiramente temos a importação do useState. Logo em seguida temos a função mudarIdade que irá alterar (através do setIdade) o valor da variável idade para 45.</p><br>
+        <p>Lembre-se, no useState temos duas partes dentro dos colchetes. A primeira parte é a variável em si e a segunda parte é a função responsável por alterar o valor da variável.</p><br>
+        <p>No useState podemos ver que a variável idade é iniciada com o valor 30.</p><br>
+        <p>Na tag button (dentro do return) temos o evento de click onClick que executa a função mudarIdade.</p><br>
+        <p><img src="img/cap11/img_3.png" alt="Imagem"></p><br>
+        <p>No navegador teremos a seguinte tela:</p><br>
+        <p><img src="img/cap11/img_4.png" alt="Imagem"></p><br>
+        <p>Caso o botão seja clicado, a função mudarIdade será executada e o valor da variável idade será alterado para 45.</p><br>
+        <p><img src="img/cap11/img_5.png" alt="Imagem"></p><br>
+        <p>Para uma maior compreensão do useState deixaremos aqui um vídeo explicativo:</p><br>
+        <p><a href="https://www.youtube.com/watch?v=_ggyWGZODIM&ab_channel=ProgramadorEspartano" target="_blank">https://www.youtube.com/watch?v=_ggyWGZODIM&ab_channel=ProgramadorEspartano</a></p><br><br>
+        <div id="voltar-topo">
+            <a href="#div">Voltar p/ o Topo</a>
+        </div><br><br>
+    </div>
+</body>
+
+</html>
