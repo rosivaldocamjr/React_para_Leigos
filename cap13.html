@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 13 - onSubmit( ) e onChange( )</title>
+    <link rel="stylesheet" href="css/paginaInicial.css">
+</head>
+
+<body>
+    <div id="div">
+        <div id="voltar-pag-inicial">
+            <a href="index.html">Voltar p/ Página Inicial</a>
+        </div>
+        <h2>onSubmit( ) e onChange( )</h2>
+        <p>No capítulo 4 vimos o evento de click <span>onClick</span>, que geralmente é usado em um botão. Quando o botão for clicado um método será executado. Mas temos diversos outros eventos. Neste capítulo veremos os eventos <span>onSubmit</span> e o <span>onChange</span>.</p><br><br>
+        <h3><strong>Evento onSubmit()</strong></h3><br>
+        <p>O onSubmit é o evento para quando temos formulários:</p><br>
+        <p><img src="img/cap13/img_1.png" alt="Imagem"></p><br>
+        <p>Neste exemplo o arquivo <span>App.jsx</span> se encontra da seguinte forma:</p><br>
+        <p><img src="img/cap13/img_2.png" alt="Imagem"></p><br>
+        <p>O nosso formulário se encontra dentro da tag <span>form</span> com dois <span>input's</span>, um <span>input text</span> que irá receber uma string e um <span>input submit</span> que se assemelha a um botão.</p><br>
+        <p>Quando estamos usando a tag <span>form</span>, o evento <span>onSubmit</span> é colocado dentro da tag juntamente com o método a ser executado. No exemplo abaixo o método/função irá disparar um <span>alert</span>.</p><br>
+        <p><img src="img/cap13/img_3.png" alt="Imagem"></p><br>
+        <p>No navegador teremos:</p><br>
+        <p><img src="img/cap13/img_4.png" alt="Imagem"></p><br>
+        <p><span>IMPORTANTE</span>: Formulários (form) enviam dados para o <span>backend</span> (servidor), enviam os dados que estão dentro da tag <span>form</span> para algum lugar, no nosso exemplo acima ele está enviando apenas o nome digitado dentro do <span>input text</span>.</p><br>
+        <p>Veremos uma característica importante do <span>onSubmit</span>. Para isso mudaremos a função <span>cadastrarUsuario</span>.</p><br>
+        <p><img src="img/cap13/img_5.png" alt="Imagem"></p><br>
+        <p>No navegador, ao digitar um nome e clicar em Cadastrar, acontece o <span>reload</span> da página, ou seja, a página é atualizada e o <span>console.log</span> não permanece no Console do navegador. Essa é uma característica do evento <span>onSubmit</span>. Para interromper esse <span>reload</span> da página usaremos os seguintes comandos:</p><br>
+        <p><img src="img/cap13/img_6.png" alt="Imagem"></p><br>
+        <p>Quando colocamos o <span>e</span> (também pode ser a palavra event) dentro dos parênteses de function, podemos usar o método <span>preventDefault</span>, que interrompe esse <span>reload</span> do evento <span>onSubmit</span>.</p><br>
+        <p>Agora o <span>console.log</span> permanece no Console do navegador e a página não é atualizada:</p><br>
+        <p><img src="img/cap13/img_7.png" alt="Imagem"></p><br><br>
+        <h3><strong>Evento onChange()</strong></h3><br>
+        <p>O arquivo <span>App.jsx</span> se encontra dessa maneira:</p><br>
+        <p><img src="img/cap13/img_8.png" alt="Imagem"></p><br>
+        <p>O evento <span>onChange()</span> é um evento de mudança, no nosso exemplo assim que houver uma mudança na tag em que o <span>onChange()</span> estiver a função será executada.</p><br>
+        <p>Essa função <span>teclado</span> recebe um parâmetro (geralmente e ou event). A partir desse parâmetro podemos usar o comando <span>e.target.value</span>, que significa que iremos pegar cada valor digitado na tag <span>input</span>.</p><br>
+        <p><img src="img/cap13/img_9.png" alt="Imagem"></p><br>
+        <p><img src="img/cap13/img_10.png" alt="Imagem"></p><br>
+        <p>Outro exemplo:</p><br>
+        <p><img src="img/cap13/img_11.png" alt="Imagem"></p><br>
+        <p>No exemplo acima fizemos um <span>select</span> com algumas opções dentro. Perceba que o evento é passado dentro da tag <span>select</span> e a cada mudança a função <span>minhaFuncao</span> é executada. A função leva um parâmetro com o nome de <span>valor</span>. O comando <span>valor.target.value</span> significa que o valor de cada mudança ocorrida será mostrado no <span>console.log</span>.</p><br>
+        <p><img src="img/cap13/img_12.png" alt="Imagem"></p><br>
+        <p><img src="img/cap13/img_13.png" alt="Imagem"></p><br>
+        <p>Perceba que a cada mudança que fazemos no <span>select</span>, o seu valor é mostrado no <span>console.log</span>.</p><br><br>
+        <div id="voltar-topo">
+            <a href="#div">Voltar p/ o Topo</a>
+        </div><br><br>
+    </div>
+</body>
+
+</html>
